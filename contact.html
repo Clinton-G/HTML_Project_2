@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: lightgrey;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header {
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    main {
+        padding: 25px;
+        max-width: 800px;
+        margin: 25px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: green;
+        margin-bottom: 25px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    input[type="submit"] {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    input[type="submit"]:hover {
+        text-decoration: underline;
+    }
+
+    a {
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    nav ul li a {
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <input type="submit" value="Send">
+            </form>
+            <p>Email: <a href="mailto:my@email.com">my@email.com</a></p>
+            <p>Social Media: 
+                <a href="">Twitter</a>, 
+                <a href="">LinkedIn</a>
+            </p>
+        </section>
+    </main>
+
+    <nav>
+        <ul>
+            <li><a href="1_Project1.html">Home</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
